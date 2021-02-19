@@ -6,29 +6,37 @@
 در بین برنامه نویسان حرفه ای نوتیشن ها و سبک های نوشتاری رایجی در ایجاد زبانی مشترک وجود دارد که از جمله آن می توان به :
 
   camelCase : در این سبک نوشتاری حروف اول کلمات کوچک و حروف دیگر بزرگ می باشد. برای مثال :
-
+ </div>  
+ 
  ```csharp
  public List camelCase() {
         int elapsedTimeInDays=1; //camelCase 
  }
  ```
-
+ 
+  <div dir="rtl">
   PascalCase  : در این سبک نوشتاری حروف اول کلمات بزرگ می باشد. برای مثال :  
+  </div> 
   
   ```csharp
   public List PascalCase() {
   Complex FulcrumPoint = Complex.FromRealNumber(23.0); //PascalCase
   }
   ```
-
+  
+  <div dir="rtl">
   kebab-case : در این سبک نوشتاری حروف اول کلمات کوچک و بین کلمات  - قرار می گیرد. برای مثال :
+  </div> 
   
   ```csharp
   public List kebabcase() {
   int elapsed-time-in-days=1; //kebab-case
   }
   ```
+  
+  <div dir="rtl">
   snake_case : در این سبک نوشتاری حروف اول کلمات کوچک و بین کلمات _ قرار می گیرد. برای مثال :
+  </div> 
   
   ```csharp
   public List snakecase() {
@@ -36,7 +44,9 @@
    }
   ```
   
+  <div dir="rtl">
   Hungarian  : در این سبک نوشتاری نوع داده ای در ابتدا و کلمات بعدی با حروف بزرگ شروع می شوند. برای مثال :
+  </div> 
   
   ```csharp
   public List Hungarian() {
@@ -44,7 +54,7 @@
    }
   ```
   
- </div>  
+
   <div>
     <p dir="rtl"> - <b> در کد تمیز نام توابع و کلاس ها و اینترفیس ها و فضای نام ها به سبک PascalCase نوشته می شوند و متغیر ها و آرگومان ها به سبک camelCase می باشند. </b> </p>
     <p dir="rtl"> تا اینجا از اهمیت انتخاب اسامی مناسب برای اشیا مطلع شدیم اما این اسامی باید چه ویژگی هایی داشته باشند در زیر این ویژگی ها را همراه با چند مثال بررسی می کنیم: </p>

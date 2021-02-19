@@ -9,5 +9,8 @@
   <li> <strong> snake_case </strong> : در این سبک نوشتاری حروف اول کلمات کوجک و بین کلمات _ قرار می گیرد. برای مثال : <br/>   <code> int elapsed_time_in_days=1; //snake_case </code> </li>
   <li> <strong> Hungarian </strong> : در این سبک نوشتاری نوع داده ای در ابتدا و کلمات بعدی با حروف بزرگشروع می شوند. برای مثال : <br/>   <code> string strName="Mohammad"; //Hungarian </code></li>
 <ul>
-<p dir="rtl">  در کد تمیز نام توابع و کلاس ها و اینترفیس ها و فضای نام ها به سبک PascalCase نوشته می شود و متغیر ها و آرگومان ها به سبک camelCase می باشند </p>
+  <div dir="rtl">
+    <p dir="rtl">  در کد تمیز نام توابع و کلاس ها و اینترفیس ها و فضای نام ها به سبک PascalCase نوشته می شود و متغیر ها و آرگومان ها به سبک camelCase می باشند </p>
+   </div>
+
 </div>

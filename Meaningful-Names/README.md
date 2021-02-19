@@ -1,9 +1,9 @@
-<h1 dir="rtl">اسامی با معنی</h1>
 <div dir="rtl">
-  <p dir="rtl">
-       <b>اسامی</b>   همه جای برنامه وجود دارند . متد ها ، کلاس ها ، فضاهای نام ، آرگومان ها ، متغیر ها و ... همه و همه نام گذاری می شوند.<b>اسامی با معنی</b> نقش مهمی در خوانایی برنامه ها و توسعه و نگه داری کد های منبع موجود دارند.<b>اسامی</b> باید با معنی و بیانگر ویژگی ها و کاربرد شی مورد نظر باشند ، به گونه ای که با دیدن نام شی مورد نظر عملکرد آن کامل مشخص باشد و نیاز به بررسی پیاده سازی آن نباشد.این امر موجب می شود توسعه و نگه داری سورس کد آسان و زمان توسعه آن را کاهش دهد زیرا طبق تحقیقات انجام شده در توسعه نرم افزار 70 درصد زمان صرف بررسی کد های قبلی و بررسی عملکرد اشیا می شود بنابرین صرف زمان در زدن کد خوب به خصوص نام گذاری مناسب موجب جلوگیری از صرف زمان بیشتر هنگام توسعه در جهت بررسی کد های قبلی و عملکرد اشیا می شود.
-  </p>
-<p dir="rtl"> در بین برنامه نویسان حرفه ای نوتیشن ها و سبک های نوشتاری رایجی در ایجاد زبانی مشترک وجود دارد که از جمله آن می توان به : <p>
+# اسامی با معنی
+اسامی همه جای برنامه وجود دارند . متد ها ، کلاس ها ، فضاهای نام ، آرگومان ها ، متغیر ها و ... همه و همه نام گذاری می شوند.اسامی با معنینقش مهمی در خوانایی برنامه ها و توسعه و نگه داری کد های منبع موجود دارند.<b>اسامی</b> باید با معنی و بیانگر ویژگی ها و کاربرد شی مورد نظر باشند ، به گونه ای که با دیدن نام شی مورد نظر عملکرد آن کامل مشخص باشد و نیاز به بررسی پیاده سازی آن نباشد.این امر موجب می شود توسعه و نگه داری سورس کد آسان و زمان توسعه آن را کاهش دهد زیرا طبق تحقیقات انجام شده در توسعه نرم افزار 70 درصد زمان صرف بررسی کد های قبلی و بررسی عملکرد اشیا می شود بنابرین صرف زمان در زدن کد خوب به خصوص نام گذاری مناسب موجب جلوگیری از صرف زمان بیشتر هنگام توسعه در جهت بررسی کد های قبلی و عملکرد اشیا می شود.
+در بین برنامه نویسان حرفه ای نوتیشن ها و سبک های نوشتاری رایجی در ایجاد زبانی مشترک وجود دارد که از جمله آن می توان به :
+</div>
+
 <ul dir="rtl">
   <li> <strong> camelCase </strong> : در این سبک نوشتاری حروف اول کلمات کوچک و حروف دیگر بزرگ می باشد. برای مثال :  <br/>  <code> int elapsedTimeInDays=1; //camelCase </code> </li>
   <li> <strong> PascalCase </strong> : در این سبک نوشتاری حروف اول کلمات بزرگ می باشد. برای مثال : <br/>   <code> Complex FulcrumPoint = Complex.FromRealNumber(23.0); //PascalCase </code> </li>
@@ -15,21 +15,23 @@
     <p dir="rtl"> - <b> در کد تمیز نام توابع و کلاس ها و اینترفیس ها و فضای نام ها به سبک PascalCase نوشته می شوند و متغیر ها و آرگومان ها به سبک camelCase می باشند. </b> </p>
     <p dir="rtl"> تا اینجا از اهمیت انتخاب اسامی مناسب برای اشیا مطلع شدیم اما این اسامی باید چه ویژگی هایی داشته باشند در زیر این ویژگی ها را همراه با چند مثال بررسی می کنیم: </p>
     <ul dir="rtl">
-       <li> <strong> استفاده از اسم‌های بیان کننده منظور </strong> : نام شی باید گویای عملکرد شی باشد به گونه ای که با دیدن نام شی  لازم به بازبینی شی نباشد .
+       <li> <strong> استفاده از اسم های بیان کننده منظور </strong> : نام شی باید گویای عملکرد شی باشد به گونه ای که با دیدن نام شی  لازم به بازبینی کد شی نباشد.
       </br>
     <p dir="rtl"> برای مثال کد زیر گویای عملکرد تابع نیست. </p>
-    <div dir="ltr">   
-   <pre dir="ltr"> <span class="pl-k">public</span> <span class="pl-smi">List</span> getThem() {
-        <span class="pl-smi">List</span> list1 <span class="pl-k">=</span> <span class="pl-k">new</span> ArrayList;
-                <span class="pl-k">for</span> (<span class="pl-k">int</span>[] x <span class="pl-k">:</span> theList)
-                        <span class="pl-smi">If</span> (x[<span class="pl-c1">0</span>] <span class="pl-k">==</span> <span class="pl-c1">4</span>)
-                                <span class="pl-smi">List1</span><span class="pl-k">.</span>add(x);
-         <span class="pl-smi">Return</span> list1;
-}</pre>
+  
+```java
+ public List getThem() {
+        List list1 = new ArrayList;
+                for (int[] x : theList)
+                        If (x[0] == 4)
+                                List1.add(x);
+         Return list1;
+}
+```
  </div>
-        <p dir="rtl"> برای مثال کد زیر گویای عملکرد است. </p>
-     <div dir="ltr">   
-    <pre dir="ltr"><span class="pl-k">public</span> <span class="pl-smi">List</span> getFlaggedCells() {
+     <p dir="rtl"> برای مثال کد زیر گویای عملکرد است. </p>
+     <div >   
+     <pre ><span class="pl-k">public</span> <span class="pl-smi">List</span> getFlaggedCells() {
         <span class="pl-smi">List</span> flaggedCells <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">ArrayList</span>();
         <span class="pl-k">for</span> (<span class="pl-k">int</span>[] cell <span class="pl-k">:</span> gameBoard)
                 <span class="pl-smi">If</span> (cell[<span class="pl-c1">STATUS_VALUE</span>] <span class="pl-k">==</span> <span class="pl-c1">FLAGGED</span>)

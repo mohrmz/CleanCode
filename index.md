@@ -1,37 +1,103 @@
-## Welcome to GitHub Pages
+<div dir="rtl">
 
-You can use the [editor on GitHub](https://github.com/mohrmz/CleanCode/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# اسامی با معنی
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+**اسامی** همه جای برنامه وجود دارند.متد ها ، کلاس ها ، فضاهای نام ، آرگومان ها ، متغیر ها و ... همه و همه نام گذاری می شوند.**اسامی با معنی** نقش مهمی در خوانایی برنامه ها و توسعه و نگه داری کد های منبع موجود دارند.**اسامی** باید با معنی و بیانگر ویژگی ها و کاربرد شی مورد نظر باشند،به گونه ای که با دیدن نام شی مورد نظر عملکرد آن کامل مشخص باشد و نیاز به بررسی پیاده سازی آن نباشد.این امر موجب می شود توسعه و نگه داری سورس کد آسان و زمان توسعه آن را کاهش دهد زیرا طبق تحقیقات انجام شده در توسعه نرم افزار 70 درصد زمان صرف بررسی کد های قبلی و بررسی عملکرد اشیا می شود بنابرین صرف زمان در زدن کد خوب به خصوص نام گذاری مناسب موجب جلوگیری از صرف زمان بیشتر هنگام توسعه در جهت بررسی کد های قبلی و عملکرد اشیا می شود.
+در بین برنامه نویسان حرفه ای نوتیشن ها و سبک های نوشتاری رایجی در ایجاد زبانی مشترک وجود دارد که از جمله آن می توان به :
 
-### Markdown
+  **camelCase** : در این سبک نوشتاری حروف اول کلمات کوچک و حروف دیگر بزرگ می باشد. برای مثال :
+ </div>  
+ 
+ ```csharp
+ public List camelCase() {
+        int elapsedTimeInDays=1; //camelCase 
+ }
+ ```
+ 
+  <div dir="rtl">
+  
+  **PascalCase**  : در این سبک نوشتاری حروف اول کلمات بزرگ می باشد. برای مثال :  
+  
+  </div> 
+  
+  ```csharp
+  public List PascalCase() {
+  Complex FulcrumPoint = Complex.FromRealNumber(23.0); //PascalCase
+  }
+  ```
+  
+  <div dir="rtl">
+  
+  **kebab-case** : در این سبک نوشتاری حروف اول کلمات کوچک و بین کلمات  - قرار می گیرد. برای مثال :
+  
+  </div> 
+  
+  ```csharp
+  public List kebabcase() {
+  int elapsed-time-in-days=1; //kebab-case
+  }
+  ```
+  
+  <div dir="rtl">
+  
+  **snake_case** : در این سبک نوشتاری حروف اول کلمات کوچک و بین کلمات _ قرار می گیرد. برای مثال :
+  
+  </div> 
+  
+  ```csharp
+  public List snakecase() {
+  int elapsed_time_in_days=1; //snake_case 
+  }
+  ```
+  
+  <div dir="rtl">
+  
+  **Hungarian**  : در این سبک نوشتاری نوع داده ای در ابتدا و کلمات بعدی با حروف بزرگ شروع می شوند. برای مثال :
+  
+  </div> 
+  
+  ```csharp
+  public List Hungarian() {
+  string strName="Mohammad"; //Hungarian
+  }
+  ```
+  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+  <div dir="rtl">
+  
+    در کد تمیز نام توابع و کلاس ها و اینترفیس ها و فضای نام ها به سبک PascalCase نوشته می شوند و متغیر ها و آرگومان ها به سبک camelCase می باشند. تا اینجا از اهمیت انتخاب اسامی مناسب برای اشیا مطلع شدیم اما این اسامی باید چه ویژگی هایی داشته باشند در زیر این ویژگی ها را همراه با چند مثال بررسی می کنیم:
+  
+  **استفاده از اسم های بیان کننده منظور** : نام شی باید گویای عملکرد شی باشد به گونه ای که با دیدن نام شی  لازم به بازبینی کد شی نباشد.
+    برای مثال کد زیر گویای عملکرد تابع نیست. 
+  </div>
+  
+```csharp
+ public List getThem() {
+        List list1 = new ArrayList;
+                for (int[] x : theList)
+                        If (x[0] == 4)
+                                List1.add(x);
+         Return list1;
+}
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mohrmz/CleanCode/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+ <div dir="rtl">
+     در حالی که کد زیر گویای عملکرد تابع است.
+  </div>
+  
+```csharp
+public List getFlaggedCells() {
+        List flaggedCells = new ArrayList();
+        for (int[] cell : gameBoard)
+                If (cell[STATUS_VALUE] == FLAGGED)
+                        flaggedCells.add(cell);
+        return flaggedCells;
+}
+```
+ <div dir="rtl">
+ 
+ 
+ 
+ **خودداری از دادن اطلاعات اشتباه** : نام ها نباید بی معنی و مختصر باشند و یا از نام گذاری های مشابه دوری کنید
+    
+</div>

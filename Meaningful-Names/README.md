@@ -61,7 +61,6 @@
   
   
    استفاده از اسم های بیان کننده منظور  : نام شی باید گویای عملکرد شی باشد به گونه ای که با دیدن نام شی  لازم به بازبینی کد شی نباشد.
-     
     برای مثال کد زیر گویای عملکرد تابع نیست. 
   </div>
   
@@ -75,20 +74,19 @@
 }
 ```
 
-
-     <p dir="rtl"> برای مثال کد زیر گویای عملکرد است. </p>
-     <div >   
-     <pre ><span class="pl-k">public</span> <span class="pl-smi">List</span> getFlaggedCells() {
-        <span class="pl-smi">List</span> flaggedCells <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-smi">ArrayList</span>();
-        <span class="pl-k">for</span> (<span class="pl-k">int</span>[] cell <span class="pl-k">:</span> gameBoard)
-                <span class="pl-smi">If</span> (cell[<span class="pl-c1">STATUS_VALUE</span>] <span class="pl-k">==</span> <span class="pl-c1">FLAGGED</span>)
-                        flaggedCells<span class="pl-k">.</span>add(cell);
-        <span class="pl-k">return</span> flaggedCells;
-}</pre>
-    </div>
-      </li>
-       <li dir="rtl"> <strong> خودداری از دادن اطلاعات اشتباه </strong> : نام ها نباید بی معنی و مختصر باشند و یا از نام گذاری های مشابه دوری کنید. </li>
-    </ul>
-   </div>
-
+ <div dir="rtl">
+     برای مثال کد زیر گویای عملکرد است.
+  </div>
+  
+```csharp
+public List getFlaggedCells() {
+        List flaggedCells = new ArrayList();
+        for (int[] cell : gameBoard)
+                If (cell[STATUS_VALUE] == FLAGGED)
+                        flaggedCells.add(cell);
+        return flaggedCells;
+}
+```
+ <div dir="rtl">
+    خودداری از دادن اطلاعات اشتباه  : نام ها نباید بی معنی و مختصر باشند و یا از نام گذاری های مشابه دوری کنید.
 </div>
